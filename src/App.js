@@ -1,14 +1,20 @@
 // import logo from './logo.svg';
 import './App.css';
+import Players from './components/Players/Players';
 // import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Header from './components/Header/Header';
+// import Team from './components/Team/Team';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  const element = <FontAwesomeIcon icon={faCoffee} />
+  // const element = <FontAwesomeIcon icon={faCoffee} />
   return (
     <div className="App">
-      <h2 className='p-3 mb-2 bg-primary text-white'>Hello React! {element}</h2>
+      <Header></Header>
+      <Players></Players>
+      <Footer></Footer>
     </div>
   );
 }
